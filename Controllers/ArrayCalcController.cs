@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using calculator.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace calculator.Controllers
@@ -10,6 +11,12 @@ namespace calculator.Controllers
     [ApiController]
     public class ArrayCalcController : ControllerBase
     {
+        private readonly IProductService _productService;
+        public ArrayCalcController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         // GET api/arraycalc
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -17,18 +24,28 @@ namespace calculator.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/arraycalc
+        //// GET api/arraycalc
+        //[HttpGet]
+        //public ActionResult<IEnumerable<string>> Reverse()
+        //{
+        //    return new string[] { "Rvalue1", "Rvalue2" };
+        //}
+
+        // GET api/arraycalc/reverse
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Reverse()
+        public ActionResult<int[]> Reverse()
         {
-            return new string[] { "Rvalue1", "Rvalue2" };
+            int[] productId = new int[] { 1, 2, 3, 4, 5 };
+            var reversedProduct = _productService.Reverse(productId);
+            return reversedProduct;
         }
 
-        // GET api/arraycalc/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [HttpGet]
+        public ActionResult<int[]> DeletePart(int position)
         {
-            return "value";
-        }        
+            int[] productId=  new int[] { 1, 2, 3, 4, 5 };
+            var deletededProduct = _productService.DeletePart(position, productId);
+            return deletededProduct;
+        }
     }
 }
