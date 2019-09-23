@@ -17,35 +17,30 @@ namespace calculator.Controllers
             _productService = productService;
         }
 
-        // GET api/arraycalc
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        //// GET api/arraycalc
-        //[HttpGet]
-        //public ActionResult<IEnumerable<string>> Reverse()
-        //{
-        //    return new string[] { "Rvalue1", "Rvalue2" };
-        //}
-
         // GET api/arraycalc/reverse
         [HttpGet]
-        public ActionResult<int[]> Reverse()
+        public ActionResult<int[]> Reverse(int productId1, int productId2, int productId3, int productId4, int productId5 )
         {
-            int[] productId = new int[] { 1, 2, 3, 4, 5 };
-            var reversedProduct = _productService.Reverse(productId);
-            return reversedProduct;
+            int[] response = new int[] { };
+            int[] requestProductId = new int[] { productId1 , productId2, productId3, productId4, productId5};
+            response = _productService.Reverse(requestProductId);
+
+            return response;
         }
 
+        // GET api/arraycalc/deletepart
         [HttpGet]
-        public ActionResult<int[]> DeletePart(int position)
+        public ActionResult<int[]> DeletePart(int position, int productId1, int productId2, int productId3, int productId4, int productId5)
         {
-            int[] productId=  new int[] { 1, 2, 3, 4, 5 };
-            var deletededProduct = _productService.DeletePart(position, productId);
-            return deletededProduct;
+            int[] response = new int[] { };
+            int[] requestProductId = new int[] { productId1, productId2, productId3, productId4, productId5 };
+
+            if ((position > 0) && (position < requestProductId.Length))
+            {                
+                response = _productService.DeletePart(position, requestProductId);
+            }
+
+            return response;
         }
     }
 }
