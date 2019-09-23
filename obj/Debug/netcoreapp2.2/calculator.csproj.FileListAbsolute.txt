@@ -1,0 +1,14 @@
+C:\Users\Tripti\Documents\Extras\src\calculator\bin\Debug\netcoreapp2.2\calculator.deps.json
+C:\Users\Tripti\Documents\Extras\src\calculator\bin\Debug\netcoreapp2.2\calculator.runtimeconfig.json
+C:\Users\Tripti\Documents\Extras\src\calculator\bin\Debug\netcoreapp2.2\calculator.runtimeconfig.dev.json
+C:\Users\Tripti\Documents\Extras\src\calculator\bin\Debug\netcoreapp2.2\calculator.dll
+C:\Users\Tripti\Documents\Extras\src\calculator\bin\Debug\netcoreapp2.2\calculator.pdb
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.csprojAssemblyReference.cache
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.csproj.CoreCompileInputs.cache
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.RazorAssemblyInfo.cache
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.RazorAssemblyInfo.cs
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.AssemblyInfoInputs.cache
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.AssemblyInfo.cs
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.RazorTargetAssemblyInfo.cache
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.dll
+C:\Users\Tripti\Documents\Extras\src\calculator\obj\Debug\netcoreapp2.2\calculator.pdb
