@@ -14,15 +14,6 @@ namespace calculator.API.Domain.Services
             this._productRepository = productRepository;
         }
 
-        //public int[] Reverse1(int productId)
-        //{ 
-        //    return _productRepository.Reverse(productId);
-        //}
-
-        //public int[] DeletePart1()
-        //{ 
-        //    return _productRepository.DeletePart();
-        //}
         public int[] Reverse(int[] productId)
         {
             return _productRepository.Reverse(productId);
