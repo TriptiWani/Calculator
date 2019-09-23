@@ -1,10 +1,11 @@
-﻿using calculator.Repositories;
+﻿using calculator.Domain.Repositories;
+using calculator.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace calculator.Domain.Repositories
+namespace calculator.Repositories
 {
     public class ProductRepository : IProductRepository
     {

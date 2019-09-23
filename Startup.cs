@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using calculator.API.Domain.Services;
-using calculator.Domain.Repositories;
-using calculator.Domain.Services;
+using calculator.Services;
 using calculator.Repositories;
+using calculator.Domain.Services;
+using calculator.Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

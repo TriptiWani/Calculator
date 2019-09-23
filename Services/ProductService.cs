@@ -1,9 +1,10 @@
-﻿using calculator.Domain.Services;
+﻿using calculator.Domain.Repositories;
+using calculator.Domain.Services;
 using calculator.Repositories;
 using System;
 using System.Collections.Generic;
 
-namespace calculator.API.Domain.Services
+namespace calculator.Services
 {
     public class ProductService : IProductService
     {
